@@ -104,7 +104,7 @@ const products = [
     size: "Freesize",
     price: "50🐟 / ngày",
     deposit: "150🐟",
-    images: ["images/ma58,59.jpg", "images/ma58,591.jpg", "images/ma58,592.jpg", "images/ma58,593.jpg"]
+    images: ["images/ma58_59.jpg", "images/ma58_591.jpg", "images/ma58_592.jpg", "images/ma58_593.jpg"]
   },
   {
     name: "🌷 Mã : AD57 🌷",
@@ -522,7 +522,7 @@ function renderModalImage(name) {
     <div class="slider">
       <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
 
-      <img src="${currentImages[currentIndex]}" class="main-image">
+      <img src="./${currentImages[currentIndex]}" class="main-image">
 
       <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
     </div>
