@@ -3,6 +3,7 @@ let currentImages = [];
 const products = [
   {
     name: "🌷 Mã  : AD80 🌷",
+    brand: "@mieufashionista",
     size: "M <60kg",
     price: "60🐟 / ngày",
     deposit: "250🐟",
@@ -24,6 +25,7 @@ const products = [
   },
   {
     name: "🌷 Mã  : AD77 🌷",
+    brand: "@wepretty.clothes",
     size: "S <50kg",
     price: "80🐟 / ngày",
     deposit: "250🐟",
@@ -31,6 +33,7 @@ const products = [
   },
   {
     name: "🌷 Mã  : AD76 🌷",
+    brand: "@edini.vn",
     size: "Freesize",
     price: "60🐟 / ngày",
     deposit: "150🐟",
@@ -311,6 +314,7 @@ const products = [
   },
   {
     name: "🌷 Mã : AD36 🌷",
+    brand: "@__chouchou.official",
     size: "L <55kg",
     price: "60🐟 / ngày",
     deposit: "250🐟",
@@ -318,6 +322,7 @@ const products = [
   },
   {
     name: "🌷 Mã : AD10 🌷",
+    brand: "@remusedesigns",
     size: "Freesize",
     price: "50🐟 / ngày",
     deposit: "150🐟",
@@ -530,6 +535,7 @@ app.innerHTML = `
       <div class="product" onclick="openModal(${i})">
         <img src="${p.images[0]}" loading="lazy">
         <h3>${p.name}</h3>
+        ${p.brand ? `<p class="brand"><b>Brand:</b> ${p.brand}</p>` : ""}
         <p><b>Size:</b> ${p.size}</p>
         <p><b>Giá thuê:</b> ${p.price}</p>
         <p><b>Cọc:</b> ${p.deposit}</p>
