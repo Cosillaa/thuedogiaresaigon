@@ -1068,12 +1068,19 @@ function renderModalImage(name) {
     <div class="slider">
       <button class="nav-btn left" onclick="prevImage()">&#10094;</button>
 
-      <img src="./${currentImages[currentIndex]}" class="main-image">
+      <img src="./${currentImages[currentIndex]}" class="main-image fade-out">
 
       <button class="nav-btn right" onclick="nextImage()">&#10095;</button>
     </div>
   `;
+
+  // ép trình duyệt render trước
+  requestAnimationFrame(() => {
+    const img = document.querySelector(".main-image");
+    img.classList.remove("fade-out");
+  });
 }
+
 function prevImage() {
   currentIndex--;
   if (currentIndex < 0) currentIndex = currentImages.length - 1;
