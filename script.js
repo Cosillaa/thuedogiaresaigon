@@ -1023,8 +1023,39 @@ const products = [
 const app = document.getElementById("app");
 
 app.innerHTML = `
-  <h1>Cosilla</h1>
-  <div class="products" >
+  <header class="top-bar">
+    
+    <!-- LEFT: LOGO + NAME -->
+    <div class="logo-area">
+      <img src="images/logo-cosilla.jpg" alt="COSILLA Logo" class="logo">
+      <span class="brand-name">COSILLA</span>
+    </div>
+
+    <!-- CENTER: SEARCH -->
+    <div class="search-area search-wrapper">
+  <input 
+    type="text" 
+    id="searchInput" 
+    placeholder="Tìm mã sản phẩm (VD: AD81, 81...)"
+    oninput="handleSearch(this.value)"
+  >
+  <span id="clearSearch">✕</span>
+</div>
+
+
+    <!-- RIGHT: SOCIAL -->
+    <div class="social-area">
+      <a href="https://www.instagram.com/cosilla.thuedo_sg/" target="_blank">
+        <img src="images/instagram.jpg" alt="Instagram">
+      </a>
+      <a href="https://www.tiktok.com/@indi.2510?_r=1&_t=ZS-92hpfQ3Heon" target="z_blank">
+        <img src="images/tiktok.png" alt="TikTok">
+      </a>
+    </div>
+
+  </header>
+
+  <div class="products">
     ${products
       .map(
         (p, i) => `
@@ -1092,3 +1123,31 @@ function nextImage() {
   if (currentIndex >= currentImages.length) currentIndex = 0;
   renderModalImage(document.querySelector(".modal-title").innerText);
 }
+
+function handleSearch(keyword) {
+  keyword = keyword.toLowerCase().trim();
+
+  document.querySelectorAll(".product").forEach((item, index) => {
+    const productName = products[index].name.toLowerCase();
+
+    if (productName.includes(keyword)) {
+      item.style.display = "block";
+    } else {
+      item.style.display = "none";
+    }
+  });
+}
+
+const searchInput = document.getElementById("searchInput");
+const clearSearch = document.getElementById("clearSearch");
+
+searchInput.addEventListener("input", () => {
+  clearSearch.style.display = searchInput.value ? "block" : "none";
+});
+
+clearSearch.addEventListener("click", () => {
+  searchInput.value = "";
+  clearSearch.style.display = "none";
+  handleSearch("");
+  searchInput.focus();
+});

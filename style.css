@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f1c8d1;
+  background: #f8e6ec;
+  /* background: #f1c8d1; */
   margin: 0;
 }
 
@@ -17,7 +18,7 @@ h1 {
 }
 
 .product {
-  background: white;
+  background: #fcf4f5;
   padding: 15px;
   border-radius: 10px;
   cursor: pointer;
@@ -31,6 +32,7 @@ h1 {
 }
 
 .product:hover {
+  background-color: #f3b6c8;
   transform: scale(1.05);
   transition: 0.3s;
 }
@@ -107,23 +109,18 @@ h1 {
   background: rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 600px) {
-  .product:hover {
-    transform: none;
-  }
-}
-
 .search-box {
   text-align: center;
   margin: 20px 0;
 }
 
 #searchInput {
-  width: 90%;
+  height: 35px;
+  width: 100%;
   max-width: 400px;
   padding: 12px 16px;
-  font-size: 16px;
-  border-radius: 25px;
+  font-size: 17px;
+  border-radius: 20px;
   border: 1px solid #ccc;
   outline: none;
 }
@@ -131,7 +128,6 @@ h1 {
 #searchInput:focus {
   border-color: #e89ab0;
 }
-
 .main-image {
   max-width: 100%;
   max-height: 70vh;
@@ -143,4 +139,111 @@ h1 {
 
 .main-image.fade-out {
   opacity: 0;
+}
+
+/* ===== HEADER ===== */
+.top-bar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 16px;
+  padding: 5px 25px;
+  background: #ecb5c1;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  min-height: 70px;
+  border-radius: 0 0 18px 18px;
+}
+
+/* LEFT */
+.logo-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.brand-name {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #2e2e2e;
+}
+
+/* CENTER */
+.search-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+/* RIGHT */
+.social-area {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-area img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.social-area img:hover {
+  transform: scale(1.15);
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .top-bar {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px 14px 18px;
+  }
+  .product:hover {
+    transform: none;
+  }
+  .input,
+  .textarea,
+  .select {
+    font-size: 16px !important;
+  }
+}
+.search-wrapper {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+#clearSearch {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+  display: none;
+  user-select: none;
+}
+
+#clearSearch:hover {
+  color: #333;
+}
+
+/* chừa chỗ cho dấu X */
+#searchInput {
+  padding-right: 40px;
 }
