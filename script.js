@@ -35,22 +35,6 @@ const products = [
     ],
   },
   {
-    name: "🌷 Mã  : AD78 🌷(Ngũ Thân kèm mấn)",
-    size: "M <55kg",
-    price: "80🐟 / ngày",
-    deposit: "250🐟",
-    images: [
-      "images/ma78.webp",
-      "images/ma781.webp",
-      "images/ma782.webp",
-      "images/ma783.webp",
-      "images/ma784.webp",
-      "images/ma785.webp",
-      "images/ma786.webp",
-      "images/ma787.webp",
-    ],
-  },
-  {
     name: "🌷 Mã  : AD77 🌷",
     brand: "@wepretty.clothes",
     size: "S <50kg",
