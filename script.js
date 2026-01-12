@@ -2,6 +2,27 @@ let currentIndex = 0;
 let currentImages = [];
 const products = [
   {
+    name: "🌷 Mã  : AD84 🌷",
+    size: "Freesize",
+    price: "50🐟 / ngày",
+    deposit: "150🐟",
+    images: ["images/ma84.webp", "images/ma841.webp", "images/ma842.webp", "images/ma843.webp", "images/ma844.webp", "images/ma845.webp"],
+  },
+  {
+    name: "🌷 Mã  : AD83 🌷",
+    size: "S <50kg",
+    price: "50🐟 / ngày",
+    deposit: "150🐟",
+    images: ["images/ma83.webp", "images/ma831.webp", "images/ma832.webp", "images/ma833.webp", "images/ma834.webp", "images/ma835.webp", "images/ma836.webp", "images/ma837.webp", "images/ma838.webp"],
+  },
+  {
+    name: "🌷 Mã  : AD82 🌷",
+    size: "S <52kg",
+    price: "60🐟 / ngày",
+    deposit: "150🐟",
+    images: ["images/ma82.webp", "images/ma821.webp", "images/ma822.webp", "images/ma823.webp", "images/ma824.webp", "images/ma825.webp", "images/ma826.webp", "images/ma827.webp", "images/ma828.webp", "images/ma829.webp"],
+  },
+  {
     name: "🌷 Mã  : AD81 🌷",
     brand: "@wepretty.clothes",
     size: "S <50kg",
