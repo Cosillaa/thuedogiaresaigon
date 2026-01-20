@@ -13,8 +13,6 @@ const products = [
       "images/ma873.webp",
       "images/ma874.webp",
       "images/ma875.webp",
-      "images/ma876.webp",
-      "images/ma877.webp",
     ],
   },  
   {
