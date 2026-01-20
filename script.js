@@ -2,6 +2,22 @@ let currentIndex = 0;
 let currentImages = [];
 const products = [
   {
+    name: "🌷 Mã  : AD87 🌷",
+    size: "S",
+    price: "60🐟 / ngày",
+    deposit: "150🐟",
+    images: [
+      "images/ma87.webp",
+      "images/ma871.webp",
+      "images/ma872.webp",
+      "images/ma873.webp",
+      "images/ma874.webp",
+      "images/ma875.webp",
+      "images/ma876.webp",
+      "images/ma877.webp",
+    ],
+  },  
+  {
     name: "🌷 Mã  : AD86 🌷",
     size: "M",
     price: "60🐟 / ngày",
