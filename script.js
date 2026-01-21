@@ -2,25 +2,6 @@ let currentIndex = 0;
 let currentImages = [];
 const products = [
   {
-    name: "🌷 Mã  : AD89 🌷",
-    size: "M",
-    price: "60🐟 / ngày",
-    deposit: "250🐟",
-    images: [
-      "images/ma89.webp",
-      "images/ma891.webp",
-      "images/ma892.webp",
-      "images/ma893.webp",
-      "images/ma894.webp",
-      "images/ma895.webp",
-      "images/ma896.webp",
-      "images/ma897.webp",
-      "images/ma898.webp",
-      "images/ma899.webp",
-      "images/ma8910.webp",
-    ],
-  },
-  {
     name: "🌷 Mã  : AD88 🌷",
     size: "M",
     price: "60🐟 / ngày",
@@ -45,7 +26,7 @@ const products = [
       "images/ma874.webp",
       "images/ma875.webp",
     ],
-  },  
+  },
   {
     name: "🌷 Mã  : AD86 🌷",
     size: "M",
@@ -1173,7 +1154,7 @@ app.innerHTML = `
         <p><b>Giá thuê:</b> ${p.price}</p>
         <p><b>Cọc:</b> ${p.deposit}</p>
       </div>
-    `
+    `,
       )
       .join("")}
   </div>
