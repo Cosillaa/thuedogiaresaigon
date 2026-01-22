@@ -2,6 +2,38 @@ let currentIndex = 0;
 let currentImages = [];
 const products = [
   {
+    name: "🌷 Mã  : AD92 🌷",
+    size: "L <65kg",
+    price: "60🐟 / ngày",
+    deposit: "150🐟",
+    images: [
+      "images/ma92.webp",
+      "images/ma921.webp",
+      "images/ma922.webp",
+    ],
+  },
+  {
+    name: "🌷 Mã  : AD91 🌷",
+    size: "L",
+    price: "60🐟 / ngày",
+    deposit: "250🐟",
+    images: [
+      "images/ma91.webp",
+      "images/ma911.webp",
+      "images/ma912.webp",
+      "images/ma913.webp",
+      "images/ma914.webp",
+      "images/ma915.webp",
+      "images/ma916.webp",
+      "images/ma917.webp",
+      "images/ma918.webp",
+      "images/ma919.webp",
+      "images/ma9110.webp",
+      "images/ma9111.webp",
+      "images/ma9112.webp",
+    ],
+  },
+  {
     name: "🌷 Mã  : AD90 🌷",
     size: "M",
     price: "90🐟 / ngày",
