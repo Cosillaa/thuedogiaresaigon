@@ -17,7 +17,7 @@ const products = [
   {
     name: "🌷 Mã  : AD89 🌷",
     size: "M",
-    price: "60🐟 / ngày",
+    price: "70🐟 / ngày",
     deposit: "250🐟",
     images: [
       "images/ma89.webp",
@@ -36,7 +36,7 @@ const products = [
   {
     name: "🌷 Mã  : AD88 🌷",
     size: "M",
-    price: "60🐟 / ngày",
+    price: "70🐟 / ngày",
     deposit: "250🐟",
     images: [
       "images/ma88.webp",
@@ -48,7 +48,7 @@ const products = [
   {
     name: "🌷 Mã  : AD87 🌷",
     size: "S",
-    price: "60🐟 / ngày",
+    price: "70🐟 / ngày",
     deposit: "150🐟",
     images: [
       "images/ma87.webp",
@@ -58,11 +58,11 @@ const products = [
       "images/ma874.webp",
       "images/ma875.webp",
     ],
-  },  
+  },
   {
     name: "🌷 Mã  : AD86 🌷",
     size: "M",
-    price: "60🐟 / ngày",
+    price: "70🐟 / ngày",
     deposit: "150🐟",
     images: [
       "images/ma86.webp",
@@ -1186,7 +1186,7 @@ app.innerHTML = `
         <p><b>Giá thuê:</b> ${p.price}</p>
         <p><b>Cọc:</b> ${p.deposit}</p>
       </div>
-    `
+    `,
       )
       .join("")}
   </div>
