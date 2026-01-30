@@ -2,11 +2,49 @@ let currentIndex = 0;
 let currentImages = [];
 const products = [
   {
+    name: "🌷 Mã  : AD96 🌷", 
+    size: "S",
+    price: "70🐟 / ngày",
+    deposit: "250🐟",
+    images: [
+      "images/ma96.webp",
+      "images/ma961.webp",
+      "images/ma962.webp",
+      "images/ma963.webp",
+      "images/ma964.webp",
+      "images/ma965.webp",
+      "images/ma966.webp",
+      "images/ma967.webp",
+      "images/ma968.webp",
+      "images/ma969.webp",
+      "images/ma9610.webp",
+    ],
+  },
+  {
+    name: "🌷 Mã  : AD95 🌷", 
+    size: "S",
+    price: "70🐟 / ngày",
+    deposit: "250🐟",
+    images: [
+      "images/ma95.webp",
+      "images/ma951.webp",
+      "images/ma952.webp",
+      "images/ma953.webp",
+      "images/ma954.webp",
+      "images/ma955.webp",
+    ],
+  },
+  {
     name: "🌷 Mã  : AD94 🌷",
     size: "Freesize",
     price: "50🐟 / ngày",
     deposit: "150🐟",
-    images: ["images/ma94.webp", "images/ma941.webp", "images/ma942.webp", "images/ma943.webp"],
+    images: [
+      "images/ma94.webp",
+      "images/ma941.webp",
+      "images/ma942.webp",
+      "images/ma943.webp",
+    ],
   },
   {
     name: "🌷 Mã  : AD93 🌷",
